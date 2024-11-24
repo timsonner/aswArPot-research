@@ -1,6 +1,9 @@
 # Research - BYOVD Avast! aswArPot  
 
-Windows hates these drivers, so the toughest part of this process is getting them installed as a service...  
+Windows hates aswArPot, so the toughest part of this process is getting it installed as a service...  
+> [SC] StartService FAILED 2148204812:  
+>  
+> A certificate was explicitly revoked by its issuer.  
 
 Articles  
 https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/  
@@ -25,7 +28,7 @@ C:\Program Files\Avast Software\Avast\setup\Inf\x64\
 
 Create aswSP_ArPot2 service  
 ```  
-sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kernel
+sc.exe create aswSP_ArPot2 binPath= "C:\<Path to driver>\aswArPot.sys" type= kernel
 ```  
 
 Create aswSP_Avar service  
