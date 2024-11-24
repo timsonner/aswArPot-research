@@ -1,5 +1,7 @@
 # Research - BYOVD Avast! aswArPot  
 
+Windows hates these drivers, so the toughest part of this process is getting them installed as a service...  
+
 Articles  
 https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/  
 https://www.trendmicro.com/en_us/research/22/e/avoslocker-ransomware-variant-abuses-driver-file-to-disable-anti-Virus-scans-log4shell.html  
@@ -16,9 +18,9 @@ https://archive.org/details/avast_free_antivirus_setup_offline_202010
 Original download  
 http://files.avast.com/iavs9x/avast_free_antivirus_setup_offline.exe  
 
-Path after install of 20.8.2432  
+Path of drivers after install of Avast 20.8.2432  
 ```  
-C:\Program Files\Avast Software\Avast\setup\Inf\x64\aswArPot.sys
+C:\Program Files\Avast Software\Avast\setup\Inf\x64\
 ```  
 
 aswArPot.sys  
@@ -34,10 +36,12 @@ sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kerne
 
 Create aswSP_Avar service  
 ```  
-sc create aswSP_Avar binPath= "C:\<Path to driver>\aswSP.sys" type= kernel start= demand
+sc.exe create aswSP_Avar binPath= "C:\<Path to driver>\aswSP.sys" type= kernel
 ```  
 
 Original KillProcessPOC - https://github.com/timwhitez/killProcessPOC/blob/main/aswarpot.go  
+
+poc.go in this repo is modded version of original POC (aswarpot.go), but it directly calls win32 API, so no reliance on package "golang.org/x/sys/windows" as in original (no 'go mod init' necessary...)  
 
 ## Security Process Names  
 ```  
