@@ -1,19 +1,19 @@
-# Research - BYOVD Avast! Aswarpot  
+# Research - BYOVD Avast! aswArPot  
 
-https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/
+https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/  
 https://www.trendmicro.com/en_us/research/22/e/avoslocker-ransomware-variant-abuses-driver-file-to-disable-anti-Virus-scans-log4shell.html  
 https://cybersecuritynews.com/10-year-old-flaws-with-avast-and-avg/  
+https://www.loldrivers.io/drivers/57fc510a-e649-4599-b83e-8f3605e3d1d9/
 
 Related CVEs  
 CVE-2022-26522  
 CVE-2022-26523  
-CVE-2021-40539
+CVE-2021-40539  
 
 Avast download  
-https://www.dell.com/community/en/conversations/virus-spyware/avast-12/647f65f2f4ccf8a8de2c25a3?msockid=14050a922f30675b240c1fa02e9d665e  
-https://web.archive.org/web/20170201000000*/http://files.avast.com/iavs9x/avast_free_antivirus_setup_offline.exe  
+https://archive.org/details/avast_free_antivirus_setup_offline_202010  
 
-POC - https://github.com/timwhitez/killProcessPOC/blob/main/aswarpot.go
+POC - https://github.com/timwhitez/killProcessPOC/blob/main/aswarpot.go  
 ```  
 package main
 
@@ -205,6 +205,10 @@ avwrapper.exe
 
 Create service  
 ```  
-sc.exe create aswSP_ArPot2 binPath= C:\Windows\aswArPot.sys type= kernel
+sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kernel
 ```  
 
+Path after install of 20.8.2432  
+```  
+C:\Program Files\Avast Software\Avast\setup\Inf\x64\aswArPot.sys
+```  
