@@ -23,12 +23,6 @@ Path of drivers after install of Avast 20.8.2432
 C:\Program Files\Avast Software\Avast\setup\Inf\x64\
 ```  
 
-aswArPot.sys  
-https://file.io/FJbxjNwn10Jk  
-
-aswSP.sys  
-https://file.io/kPinktjisJ2Y  
-
 Create aswSP_ArPot2 service  
 ```  
 sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kernel
