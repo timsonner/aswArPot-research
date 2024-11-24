@@ -4,6 +4,14 @@ Windows hates aswArPot, so the toughest part of this process is getting it insta
 > [SC] StartService FAILED 2148204812:  
 >  
 > A certificate was explicitly revoked by its issuer.  
+- or -
+> Failed to start the service. Error: -2146762484  
+
+https://kb.eventtracker.com/evtpass/evtPages/EventId_51_CertSvc_47572.asp  
+
+*not a huge fan of disabling defender to get a poc to work...  
+*certificate for aswArPot driver has definately been revoked...  
+*can we disable checks or find one with a valid certificate???  
 
 Articles  
 https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/  
