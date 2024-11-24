@@ -1,4 +1,4 @@
-Research - BYOVD Avast! Aswarpot  
+# Research - BYOVD Avast! Aswarpot  
 
 https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/
 https://www.trendmicro.com/en_us/research/22/e/avoslocker-ransomware-variant-abuses-driver-file-to-disable-anti-Virus-scans-log4shell.html  
@@ -201,5 +201,10 @@ fsagentservice.exe
 mcsclient.exe
 sophosfs.exe
 avwrapper.exe
+```  
+
+Create service  
+```  
+sc.exe create aswSP_ArPot2 binPath= C:\Windows\aswArPot.sys type= kernel
 ```  
 
