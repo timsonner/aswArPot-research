@@ -1,9 +1,7 @@
 # Research - BYOVD Avast! aswArPot  
 
 Windows hates aswArPot, so the toughest part of this process is getting it installed as a service...  
-> [SC] StartService FAILED 2148204812:  
->  
-> A certificate was explicitly revoked by its issuer.  
+> [SC] StartService FAILED 2148204812: A certificate was explicitly revoked by its issuer.  
 or  
 > Failed to start the service. Error: -2146762484  
 
