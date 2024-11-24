@@ -4,7 +4,7 @@ Windows hates aswArPot, so the toughest part of this process is getting it insta
 > [SC] StartService FAILED 2148204812:  
 >  
 > A certificate was explicitly revoked by its issuer.  
-- or -
+or  
 > Failed to start the service. Error: -2146762484  
 
 https://kb.eventtracker.com/evtpass/evtPages/EventId_51_CertSvc_47572.asp  
