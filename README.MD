@@ -10,6 +10,8 @@ https://kb.eventtracker.com/evtpass/evtPages/EventId_51_CertSvc_47572.asp
 *not a huge fan of disabling defender to get a poc to work...  
 *certificate for aswArPot driver has definately been revoked...  
 *can we disable checks or find one with a valid certificate???  
+https://www.bleepingcomputer.com/news/security/how-malware-gains-trust-by-abusing-the-windows-cryptoapi-flaw/  
+https://decoded.avast.io/martinchlumecky/dirtymoe-3/  
 
 Articles  
 https://www.bleepingcomputer.com/news/security/hackers-abuse-avast-anti-rootkit-driver-to-disable-defenses/  
