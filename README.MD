@@ -24,7 +24,7 @@ C:\Program Files\Avast Software\Avast\setup\Inf\x64\aswArPot.sys
 aswArPot.sys  
 https://file.io/FJbxjNwn10Jk  
 
-aswSP.sys
+aswSP.sys  
 https://file.io/kPinktjisJ2Y  
 
 Create aswSP_ArPot2 service  
