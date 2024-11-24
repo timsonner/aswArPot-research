@@ -10,8 +10,11 @@ CVE-2022-26522
 CVE-2022-26523  
 CVE-2021-40539  
 
-Avast download  
+Avast download 20.8.2432  
 https://archive.org/details/avast_free_antivirus_setup_offline_202010  
+
+Original download  
+http://files.avast.com/iavs9x/avast_free_antivirus_setup_offline.exe  
 
 Path after install of 20.8.2432  
 ```  
